@@ -76,13 +76,13 @@ const listCreator = (expenseName, expenseValue) => {
     sublistContent.innerHTML = `<p class="product">${expenseName}</p><p class="amount">${expenseValue}</p>`;
     let editButton = document.createElement("button");
     editButton.classList.add("fa-solid", "fa-pen-to-square", "edit");
-    editButton.style.fontSize = "24px";
+    editButton.style.fontSize = "18px";
     editButton.addEventListener("click", () => {
         modifyElement(editButton, true);
     });
     let deleteButton = document.createElement("button");
     deleteButton.classList.add("fa-solid", "fa-trash-can", "delete");
-    deleteButton.style.fontSize = "24px";
+    deleteButton.style.fontSize = "18px";
     deleteButton.addEventListener("click", () => {
         modifyElement(deleteButton);
     });

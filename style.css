@@ -6,22 +6,25 @@
 }
 
 body {
-    background-color: #f7f9fd;
+    background-color: #161616;
 }
 .wrapper{
-    width: 90%;
+    width: 100% auto;
     font-size: 15px;
     max-width: 43em;
-    margin: 5% auto;
+    margin: 3% auto;
+    border-radius: 0.3em;
+    box-shadow: 0 0em 0.2em rgba(28, 0, 80, 0.2);
 }
 .container{
+    
     width: 100%;
 }
 .sub-container{
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3em;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2em;
 }
 .flex{
     display: flex;
@@ -53,8 +56,9 @@ body {
 }
 .total-amount-container,
 .user-amount-container{
+    display: grid;
     background-color: #ffffff;
-    padding: 1.25em 0.8em;
+    padding: 0.8em 0.8em;
     border-radius: 0.3em;
     box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
 }
@@ -63,19 +67,18 @@ body {
     color: #ffffff;
     border-radius: 0.3em;
     box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
-    font-weight: 500;
-    margin: 2em 0;
+    font-weight: 100;
+    margin: 0em 0;
     padding: 1.2em;
 }
 .output-container p{
-    font-weight: 500;
-    margin-bottom: 0.6em;
+    font-weight: 100;
 }
 .output-container span{
     display: block;
     text-align: center;
-    font-weight: 400;
-    color: #e5e5e5;
+    font-weight: 100;
+    color: #ffd6da;
 }
 .submit{
     font-size: 1em;
@@ -96,11 +99,11 @@ body {
     padding: 1.8em 1.2em;
     box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
     border-radius: 0.6em;
-    margin: 5% auto;
+    margin: 3% auto;
 }
 .sublist-content{
     width: 100%;
-    border-left: 0.3em solid #587ef4;
+    border-left: 0.2em solid #587ef4;
     margin-bottom: 0.6em;
     padding: 0.5em 0;
 }
@@ -126,7 +129,7 @@ body {
 }
 .error{
     color: #ff465a;
-    font-size: 12px;
+    font-size: 10px;
 }
 .edit{
     margin-left: auto;
@@ -138,7 +141,7 @@ body {
     border: none;
     color: #587ef4;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 500px){
     .wrapper{
         font-size: 14px;
     }
