@@ -12,7 +12,7 @@ body {
     width: 90%;
     font-size: 15px;
     max-width: 43em;
-    margin: 1em auto;
+    margin: 5% auto;
 }
 .container{
     width: 100%;
@@ -88,11 +88,15 @@ body {
     border-radius: 0.3em;
     cursor: pointer;
 }
+.submit:hover{
+    background-color: #2f62e3;
+}
 .list{
     background-color: #ffffff;
     padding: 1.8em 1.2em;
     box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
     border-radius: 0.6em;
+    margin: 5% auto;
 }
 .sublist-content{
     width: 100%;
@@ -122,6 +126,7 @@ body {
 }
 .error{
     color: #ff465a;
+    font-size: 12px;
 }
 .edit{
     margin-left: auto;
