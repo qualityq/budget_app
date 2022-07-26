@@ -5,6 +5,11 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* Removes placeholder text when user clicks */
+input:focus::placeholder {
+    color: transparent;
+  }
+
 /* Removed arrow keys scrolling from the input box for number */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -45,7 +50,7 @@ body {
 .wrapper h3{
     color: #363d55;
     font-weight: 500;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.8em;
 }
 .container input{
     display: block;
@@ -59,7 +64,7 @@ body {
     margin-bottom: 0.5em;
 }
 .container input:focus{
-    border-color: #587ef4;
+    border-color: #f4d058;
 }
 .total-amount-container,
 .user-amount-container{
@@ -70,13 +75,13 @@ body {
     box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
 }
 .output-container{
-    background-color: #587ef4;
+    background-color: #f4d058;
     color: #ffffff;
     border-radius: 0.3em;
     box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
     font-weight: 100;
     margin: 0em 0;
-    padding: 1.2em;
+    padding: 1em;
 }
 .output-container p{
     font-weight: 100;
@@ -88,9 +93,9 @@ body {
     color: #151213;
 }
 .submit{
-    font-size: 1em;
-    margin-top: 0.8em;
-    background-color: #587ef4;
+    font-size: 0.8em;
+    margin-top: 1em;
+    background-color: #f4d058;
     border: none;
     outline: none;
     color: #ffffff;
@@ -99,7 +104,8 @@ body {
     cursor: pointer;
 }
 .submit:hover{
-    background-color: #2f62e3;
+    background-color: #ffd95b;
+    transform: scale(1.02);
 }
 .list{
     background-color: #ffffff;
@@ -110,17 +116,17 @@ body {
 }
 .sublist-content{
     width: 100%;
-    border-left: 0.2em solid #587ef4;
+    border-left: 0.2em solid #f4d058;
     margin-bottom: 0.6em;
     padding: 0.5em 0;
 }
 .product{
     font-weight: 500;
     margin-left: 1.5em;
-    color: #363d55;
+    color: #010101;
 }
 .amount{
-    color: #414a67;
+    color: #ffd857;
     margin-left: 20%;
 }
 .icons-container{
@@ -144,13 +150,13 @@ body {
 .edit,.delete{
     background: transparent;
     cursor: pointer;
-    margin-right: 1.5em;
+    margin-right: 2em;
     border: none;
-    color: #587ef4;
+    color: #f4d058;
 }
 @media screen and (max-width: 500px){
     .wrapper{
-        font-size: 14px;
+        font-size: 11px;
     }
     .sub-container {
         grid-template-columns: 1fr;
