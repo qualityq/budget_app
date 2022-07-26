@@ -103,9 +103,12 @@ body {
     border-radius: 0.3em;
     cursor: pointer;
 }
+/* When hovering buttons scale and change color */
 .submit:hover{
-    background-color: #ffd95b;
-    transform: scale(1.02);
+    background-color: #f6d772;
+}
+.submit:active{
+    transform: scale(0.98, 0.98);
 }
 .list{
     background-color: #ffffff;

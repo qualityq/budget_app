@@ -38,7 +38,7 @@ totalAmountButton.addEventListener("click", () => {
         // Set Balance
         balanceValue.innerText = tempAmount - expenditureValue.innerText;
         // Clear Input Box
-        totalAmount.value = "1";
+        totalAmount.value = "";
     }
 });
 
